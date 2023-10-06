@@ -1,6 +1,7 @@
-output "rg_name" {
-  value = azurerm_resource_group.rg.name
+output "app_plan" {
+  value = azurerm_service_plan.app_plan.name
 }
-output "rg_location" {
-  value = azurerm_resource_group.rg.location
+
+output "app_service" {
+  value = azurerm_windows_web_app.web_app
 }
