@@ -1,5 +1,5 @@
 resource "azurerm_service_plan" "app_plan" {
-  name                = var.name
+  name                = var.plan_name
   resource_group_name = var.resource_group_name
   location            = var.resource_group_location
   os_type             = var.os_type
@@ -16,7 +16,7 @@ resource "azurerm_service_plan" "app_plan" {
 
 
 resource "azurerm_windows_web_app" "web_app" {
-  name = var.web_app_name
+  name                = var.web_app_name
   resource_group_name = var.resource_group_name
   location = var.resource_group_location
   service_plan_id = azurerm_service_plan.app_plan.id

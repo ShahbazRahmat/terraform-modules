@@ -1,4 +1,4 @@
-variable "name" {
+variable "plan_name" {
   type = string
 }
 variable "resource_group_name" {
