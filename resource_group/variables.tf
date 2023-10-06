@@ -1,6 +1,5 @@
 variable "name" {
   type = string
-  default = "poc_resource_group"
 }
 variable "location" {
   type = string
