@@ -23,5 +23,5 @@ variable "environment" {
 }
 variable "contact" {
   type = string
-  default = "shahbazrahmat@gmail.com"
+  default = "example@example.com"
 }
